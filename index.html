@@ -1,35 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jack Craven - EPK</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; background: #111; color: #eee; }
-    h1, h2 { color: #fff; }
-    a { color: #4da3ff; }
-    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
-    .gallery-grid img { width: 100%; border-radius: 8px; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jack Craven EPK</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Jack Craven</h1>
-  <p>Authenticity and passion are the trademarks for Jack Craven’s artistic identity. Known for his complex flows, Craven, born in Toronto, Canada, started writing music at a young age. He spent his early adolescence honing the lyrical, nostalgic style of rap that gained him respect amongst peers & surrounding artists in Southern Ontario.</p>
-  <p>Blending traditional hip-hop with R&B, dark melodies & hard-hitting trap, Craven has established himself at the forefront of Canada’s hip-hop scene. Jack Craven is also a member of the London-based collective <strong>Fresh Religion</strong>, a group of artists who produce music, social media content & host live events. This artist is no stranger to the limelight & will continue to be a rising star within the music industry.</p>
+<header>
+  <h1>JACK CRAVEN</h1>
+  <h2>Hip-Hop / R&B Artist · Toronto / London, ON</h2>
+</header>
 
-  <h2>Music & Socials</h2>
-  <p><a href="https://linktr.ee/jackcraven" target="_blank">All Links (Linktree)</a></p>
+<section class="bio">
+  <p>Jack Craven is a Canadian Hip-Hop/R&B artist blending emotional storytelling, modern production, and immersive sonic textures. With a background in Music Industry Arts, Jack brings together his technical knowledge and artistic identity to create music that resonates deeply.</p>
+</section>
 
-  <h2>Contact</h2>
-  <p>Email: jackcravenofficial@gmail.com</p>
+<section class="music">
+  <h3>Listen</h3>
 
-  <h2>Gallery</h2>
-  <div class="gallery-grid">
-    <img src="IMG_1886.jpeg" alt="Photo 1">
-    <img src="IMG_2031.jpeg" alt="Photo 2">
-    <img src="931B9001-E775-4064-B698-659F718688CA.jpeg" alt="Photo 3">
-    <img src="AE8A9210-4003-4973-88F3-C614D33A984B.jpeg" alt="Photo 4">
-    <img src="B8421E07-7D1D-4A3D-9EB5-FC7DC3C82F6F.jpeg" alt="Photo 5">
+  <div class="embeds">
+
+    <!-- Spotify -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7q65AtrPvffwqNKWDI66ki" width="100%" height="152" frameborder="0" allowfullscreen></iframe>
+
+    <!-- Apple Music -->
+    <iframe allow="autoplay *; encrypted-media *; fullscreen *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;border-radius:12px;" 
+    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+    src="https://embed.music.apple.com/us/artist/jack-craven/1489262474"></iframe>
+
+    <!-- YouTube videos -->
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/QlB3c7_ViWg" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/fd93WTqSt4M" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VG6dIQXwkeE" frameborder="0" allowfullscreen></iframe>
+
   </div>
+</section>
 
+<section class="downloads">
+  <a href="Jack_Craven_EPK.pdf" class="btn">Download PDF EPK</a>
+</section>
+
+<section class="gallery">
+  <h3>Gallery</h3>
+  <p>Upload your images into the <strong>images/</strong> folder and they will appear here.</p>
+  <div class="grid"></div>
+</section>
+
+<section class="contact">
+  <h3>Contact / Booking</h3>
+  <p>Email: <a href="mailto:jackcravenbusiness@gmail.com">jackcravenbusiness@gmail.com</a></p>
+
+  <div class="social-icons">
+    <a href="https://open.spotify.com/artist/7q65AtrPvffwqNKWDI66ki" target="_blank">
+      <img src="icons/spotify.svg" alt="Spotify">
+    </a>
+    <a href="https://music.apple.com/us/artist/jack-craven/1489262474" target="_blank">
+      <img src="icons/apple.svg" alt="Apple Music">
+    </a>
+    <a href="https://www.youtube.com/@jackcraven" target="_blank">
+      <img src="icons/youtube.svg" alt="YouTube">
+    </a>
+    <a href="https://instagram.com/itsjackcraven" target="_blank">
+      <img src="icons/instagram.svg" alt="Instagram">
+    </a>
+  </div>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
